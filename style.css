@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+@keyframes listColor {
+    from {
+        color: #fff;
+    }
+
+    to {
+        color: rgb(120, 119, 119);
+    }
+}
+
+@keyframes activeColor {
+    from {
+        color: #fff;
+       
+    }
+
+    to {
+        color: black;
+        padding-top: 14px;
+    
+    }
+}
+
+@keyframes changeNavColor {
+    from {
+        background-color: transparent;
+        height: 10%;
+    }
+
+    to {
+        background-color: #fff;
+        height: 7%;
+        
+    }
+}
+
+@keyframes hideLogo {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes showLogo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+body{
+    margin: 0;
+   
+}
+.container{
+    background-image: url('images/WhatsApp Image 2026-08-26 at 11.27.44 PM.jpeg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+}
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 20px;
+    font-family: 'Alkatra', display;
+    font-weight: bold;
+
+}
+.list a {
+    text-decoration: none;
+    color: #fff;
+    animation-name: listColor;
+    animation-duration: 1ms;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root);
+    animation-range: 0 1px;
+}
+
+.list a.act {
+     border-top: solid 3px #8e7754;
+     padding: 24px;
+    animation-name: activeColor;
+    animation-duration: 1ms;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root);
+    animation-range: 0 1px;
+}
+.nav{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 10%;
+    padding: 10px;
+    animation: changeNavColor linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 1px;
+}
+.logos {
+    position: relative;
+    width: 25%;
+}
+
+.logo1,
+.logo2 {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo1 img,
+.logo2 img {
+    width: 50%;
+}
+.logo1 {
+    animation: hideLogo linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 1px;
+}
+.logo2 {
+    opacity: 0;
+
+    animation: showLogo linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 1px;
+}
+.view {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.view h1{
+    font-size: 80px;
+    margin: 5px;
+    margin-top: 0px;
+}
+.view h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.view p{
+    font-size: 25px;
+    line-height: 2;
+}
+.btn1{
+    width: 150px;
+    height: 60px;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #8e7754;
+}
+.btn2{
+     width: 150px;
+     height: 60px;
+     font-weight: bold;
+     border: none;
+     font-size: 15px;
+     margin: 5px;
+     background-color: transparent;
+     border: solid #fff;
+     color: #fff;
+     border-radius: 5px;
+}
+.btn1:hover{
+    background-color: #fff;
+    color: black;
+}
+.btn2:hover{
+    background-color: #fff;
+    color: black;
+}
+.container2{
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px
+
+}
+.caption {
+    width: 50%;
+}
+.caption h2{
+    font-size: 30px;
+    color: rgb(35, 34, 34);
+    font-family: 'Agdasima', sans-serif;
+    
+}
+.container2 p{
+    font-size: 17px;
+    font-family: 'Agdasima', sans-serif;
+    color: gray;
+}
+.more-inf p{
+    line-height: 3;
+}
+.imeges{
+    align-items: center;
+    width: 40%;
+    
+}
+.container2 .imeges img{
+    width: 100%;
+    box-sizing: border-box;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+.cards{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    
+}
+.card_info{
+    width: 25%;
+    text-align: center;
+}
+.card_info img{
+    width: 100%;
+}
+.container3{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Agdasima', sans-serif;
+}
+.container3 h2{
+     color: rgb(52, 52, 52);
+     padding-bottom: 10px;
+     font-size: 30px;
+}
+.container3 p{
+    color: gray;
+    padding-bottom: 50px;
+}
+.container4{
+    width: 100%;
+    height: 500px;
+   background-color: #403d38;
+}
+.footer_info{
+    width: 18%;
+    height: 300px;
+}
+.footer{
+    padding-top: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align:left;
+    gap: 50px;
+    color: #969696;
+}
+.footer_info h2{
+    color: #fff;
+    font-size: 25px;
+}
+.prag{
+    line-height: 2;;
+
+}
+.f p{
+    border-bottom: 1px solid #9696965f ;
+    margin-bottom: 16px;
+    height: 40px;
+}
+.button img{
+    margin-top: 50px;
+}
+.button{
+    height: 300px;
+    text-align: center;
+    background-color: #353330;
+    color: #969696;
+}
